@@ -1,0 +1,19 @@
+@startuml
+
+package modelo {
+  class Personaje
+  class Guerrero
+  class Mago
+  class Inventario
+  class Item
+}
+
+package combate {
+  class ArenaCombate
+  class Turno
+  class Resultado
+}
+
+combate ..> modelo
+
+@enduml
