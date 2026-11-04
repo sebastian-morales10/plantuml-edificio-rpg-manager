@@ -1,0 +1,16 @@
+@startuml
+
+abstract class Personaje
+class Guerrero
+class Mago
+class Inventario
+class Arma
+class Pocion
+
+Personaje <|-- Guerrero
+Personaje <|-- Mago
+Personaje *-- Inventario
+Inventario o-- Arma
+Inventario o-- Pocion
+
+@enduml
