@@ -1,0 +1,11 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor LightBlue
+skinparam classBorderColor DarkBlue
+
+class Personaje {
+  - nivel : int
+  - experiencia : int
+}
+@enduml
