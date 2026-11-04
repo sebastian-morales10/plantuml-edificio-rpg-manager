@@ -1,0 +1,12 @@
+@startuml
+
+loop mientras ambos personajes sigan vivos
+  ArenaCombate -> Guerrero : atacar()
+  alt mana >= 20
+    ArenaCombate -> Mago : lanzarHechizo()
+  else sin mana
+    ArenaCombate -> Mago : ataqueBasico()
+  end
+end
+
+@enduml
