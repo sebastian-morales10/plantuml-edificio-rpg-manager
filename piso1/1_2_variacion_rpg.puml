@@ -1,0 +1,8 @@
+@startuml
+usecase "Registrar personaje" as RC
+usecase "Validar datos" as VD
+usecase "Asignar habilidad especial" as AH
+
+RC .> VD : <<include>>
+AH .> RC : <<extend>>
+@enduml
