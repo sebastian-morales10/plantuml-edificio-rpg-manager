@@ -1,0 +1,15 @@
+@startuml
+
+object "personaje : Guerrero" as g {
+  nombre = "Aragorn"
+  vida = 120
+}
+
+object "arma : Item" as e {
+  nombre = "Espada"
+  daño = 25
+}
+
+g --> e : equipado
+
+@enduml
