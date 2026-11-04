@@ -1,0 +1,13 @@
+@startuml
+start
+:Seleccionar personaje;
+
+if (¿energia > 0?) then (sí)
+  :Iniciar misión;
+  :Registrar participación;
+else (no)
+  :Mostrar "Energía insuficiente";
+endif
+
+stop
+@enduml
