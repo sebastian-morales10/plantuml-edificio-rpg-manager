@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+actor Administrador
+
+rectangle "RPG Manager" {
+  usecase "Registrar jugador" as UC1
+  usecase "Gestionar personajes" as UC2
+  usecase "Consultar resultados" as UC3
+}
+
+Administrador --> UC1
+Administrador --> UC2
+Administrador --> UC3
+
+@enduml
