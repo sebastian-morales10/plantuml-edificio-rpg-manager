@@ -1,0 +1,12 @@
+@startuml
+
+[*] --> EnEspera
+EnEspera --> EnCombate : iniciarBatalla()
+EnCombate --> Victoria : derrotarEnemigo()
+EnCombate --> Derrota : perderTodaLaVida()
+Victoria --> Recompensa : entregarPremio()
+Derrota --> Recuperacion : recuperarPersonaje()
+Recompensa --> [*]
+Recuperacion --> [*]
+
+@enduml
