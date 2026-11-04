@@ -1,0 +1,15 @@
+@startuml
+
+node "PC del Jugador" {
+  artifact "RPGManager.exe" as APP
+}
+
+node "Servidor del Juego" {
+  artifact "Sistema de Combate" as SYS
+  database "Base de Datos RPG" as DB
+}
+
+APP --> SYS : Conexion
+SYS --> DB : Consultar personajes y guardar resultados
+
+@enduml
