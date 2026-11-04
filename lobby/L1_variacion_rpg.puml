@@ -1,0 +1,4 @@
+@startuml
+Jugador -> SistemaCombate : iniciarCombate()
+SistemaCombate --> Jugador : mostrarResultado()
+@enduml
