@@ -1,0 +1,6 @@
+@startuml
+title Misión: rescatar al herrero
+
+Guerrero -> Mision : aceptar()
+Mision --> Guerrero : recompensa = 50
+@enduml
