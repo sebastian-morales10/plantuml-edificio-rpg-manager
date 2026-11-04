@@ -1,0 +1,7 @@
+@startuml
+title Mision: defender la aldea
+
+Jugador -> Mision : aceptarMision()
+Mision --> Jugador : confirmarAceptacion()
+Mision -> Jugador : entregarRecompensa(100)
+@enduml
