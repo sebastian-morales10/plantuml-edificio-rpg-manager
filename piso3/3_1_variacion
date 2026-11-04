@@ -1,0 +1,15 @@
+@startuml
+
+actor Jugador
+participant ArenaCombate
+participant Guerrero
+participant Monstruo
+
+Jugador -> ArenaCombate : iniciarCombate()
+ArenaCombate -> Guerrero : atacar()
+Guerrero -> Monstruo : causarDanio()
+Monstruo --> Guerrero : vidaActualizada
+Guerrero --> ArenaCombate : dano = 30
+ArenaCombate --> Jugador : mostrarResultado()
+
+@enduml
