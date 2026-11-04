@@ -1,0 +1,15 @@
+@startuml
+
+actor Jugador
+participant RPGManager
+participant ArenaCombate
+participant Personaje
+
+Jugador -> RPGManager : seleccionarPersonajes()
+RPGManager -> ArenaCombate : crearCombate()
+ArenaCombate -> Personaje : ejecutarTurno()
+Personaje --> ArenaCombate : resultadoDelAtaque()
+ArenaCombate --> RPGManager : ganador()
+RPGManager --> Jugador : mostrarResultado()
+
+@enduml
