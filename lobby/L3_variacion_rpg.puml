@@ -1,0 +1,10 @@
+@startuml
+' los personajes tienen habilidades
+
+class Personaje
+
+note right of Personaje
+  energia entre 0 y energiaMaxima
+end note
+
+@enduml
