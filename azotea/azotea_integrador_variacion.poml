@@ -1,0 +1,17 @@
+@startuml
+actor Jugador
+
+Jugador -> Arena : iniciarCombate()
+
+loop Cada ronda
+    Arena -> Guerrero : atacar(Monstruo)
+    Guerrero --> Arena : daño causado
+
+    Arena -> Monstruo : atacar(Guerrero)
+    Monstruo --> Arena : daño causado
+end
+
+Arena -> Arena : determinarGanador()
+Arena --> Jugador : mostrarResultado()
+
+@enduml
