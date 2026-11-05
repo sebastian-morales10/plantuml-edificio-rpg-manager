@@ -1,0 +1,14 @@
+@startuml
+!include <C4/C4_Container>
+
+Person(jugador, "Jugador", "Participa en las batallas")
+
+System_Boundary(rpg, "RPG Manager") {
+  Container(app, "Sistema de combate", "Java", "Gestiona personajes y batallas")
+  ContainerDb(db, "Base de datos RPG", "MySQL", "Guarda personajes y resultados")
+}
+
+Rel(jugador, app, "Selecciona personajes y combate")
+Rel(app, db, "Consulta y guarda información")
+
+@enduml
