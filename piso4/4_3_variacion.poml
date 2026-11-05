@@ -1,0 +1,22 @@
+@startuml
+
+entity Personaje {
+  * id_personaje : INT <<PK>>
+  --
+  nombre : VARCHAR(50)
+  nivel : INT
+  vida : INT
+  tipo : VARCHAR(30)
+}
+
+entity Combate {
+  * id_combate : INT <<PK>>
+  --
+  fecha : DATE
+  ganador : VARCHAR(50)
+  personaje_id : INT <<FK>>
+}
+
+Personaje ||--o{ Combate
+
+@enduml
